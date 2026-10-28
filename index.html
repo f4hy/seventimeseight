@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Seven Times Eight</title>
+    <meta name="description" content="Seven Times Eight"/>
+    <meta name="author" content="Brendan Fahy"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+      $("#fiftysix").css("font-size", $(window).height()*0.95);
+      });
+
+      $(window).resize(function() {
+      $("#fiftysix").css("font-size", $(window).height()*0.95);
+      if($(window).width() < $(window).height() ){
+
+      $("#fiftysix").css("height", $(window).width());
+      $("#fiftysix").css("font-size", $(window).width()*0.85);
+      };
+
+      });
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21044991-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <style>
+      #fiftysix {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 1%;
+      font-size: 700px;
+      font-family: 'Roboto', 'Droid Sans', arial, serif;
+      }
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <div id="fiftysix">56</div>
+  </body>
+</html>
