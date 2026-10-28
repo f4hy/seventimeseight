@@ -1,44 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Seven Times Eight</title>
-    <meta name="description" content="Seven Times Eight"/>
-    <meta name="author" content="Brendan Fahy"/>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-      $("#fiftysix").css("font-size", $(window).height()*0.95);
-      });
-
-      $(window).resize(function() {
-      $("#fiftysix").css("font-size", $(window).height()*0.95);
-      if($(window).width() < $(window).height() ){
-
-      $("#fiftysix").css("height", $(window).width());
-      $("#fiftysix").css("font-size", $(window).width()*0.85);
-      };
-
-      });
-    </script>
-    <style>
-      #fiftysix {
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-top: 1%;
-      font-size: 700px;
-      font-family: 'Roboto', 'Droid Sans', arial, serif;
-      }
-    </style>
-
-
-  </head>
-
-
-  <body>
-    <div id="fiftysix">56</div>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seven Times Eight</title>
+<meta name="description" content="7 × 8 = 56">
+<meta name="author" content="Brendan Fahy">
+<link rel="icon" href="favicon.ico">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; }
+  body {
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* Two digits are about 1.1em wide and 0.72em tall: fit whichever runs out first. */
+    font-size: min(115dvh, 80vw);
+    line-height: 0.8;
+  }
+</style>
+</head>
+<body>56</body>
 </html>
